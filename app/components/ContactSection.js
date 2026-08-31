@@ -79,7 +79,7 @@ export default function ContactSection({ id }) {
 
                             {/* EMAIL */}
                             <a
-                                href="mailto:theshahmeer786@gmail.com"
+                                href="mailto:shahmeer.dev786@gmail.com"
                                 className="flex items-center space-x-3 hover:opacity-80 transition"
                             >
                                 <FaEnvelope className="text-[#EA4335]" />
@@ -90,7 +90,7 @@ export default function ContactSection({ id }) {
 
                             {/* X (formerly Twitter) */}
                             <a
-                                href="https://x.com/shahmeershahid_"
+                                href="https://x.com/heyshahmeer"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center space-x-3 hover:opacity-80 transition"
@@ -103,7 +103,7 @@ export default function ContactSection({ id }) {
 
                             {/* GITHUB */}
                             <a
-                                href="https://github.com/bytesentinal"
+                                href="https://github.com/heyshahmeer"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center space-x-3 hover:opacity-80 transition"
@@ -129,7 +129,7 @@ export default function ContactSection({ id }) {
 
                             {/* INSTAGRAM */}
                             <a
-                                href="https://instagram.com/bytesentinal"
+                                href="https://instagram.com/heyshahmeer_"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center space-x-3 hover:opacity-80 transition"

@@ -8,6 +8,7 @@ import {
     FaGithub,
     FaLinkedin,
     FaInstagram,
+    FaRedditAlien,
 } from "react-icons/fa";
 import { SiFiverr, SiUpwork, SiX } from "react-icons/si";
 
@@ -137,6 +138,19 @@ export default function ContactSection({ id }) {
                                 <FaInstagram className="text-[#E4405F]" />
                                 <span className="bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] bg-clip-text text-transparent font-semibold">
                                     Instagram
+                                </span>
+                            </a>
+
+                            {/* REDDIT */}
+                            <a
+                                href="https://www.reddit.com/user/heyshahmeer_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center space-x-3 hover:opacity-80 transition"
+                            >
+                                <FaRedditAlien className="text-[#FF4500]" />
+                                <span className="bg-gradient-to-r from-[#FF4500] to-[#FF6A33] bg-clip-text text-transparent font-semibold">
+                                    Reddit
                                 </span>
                             </a>
 

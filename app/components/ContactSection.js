@@ -77,20 +77,9 @@ export default function ContactSection({ id }) {
                             className="space-y-5 text-gray-300"
                         >
 
-                        
 
-                            {/* X (formerly Twitter) */}
-                            <a
-                                href="https://x.com/heyshahmeer"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center space-x-3 hover:opacity-80 transition"
-                            >
-                                <SiX className="text-white bg-black rounded-sm p-0.5" />
-                                <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent font-semibold">
-                                    Twitter
-                                </span>
-                            </a>
+
+
 
                             {/* GITHUB */}
                             <a
@@ -115,6 +104,19 @@ export default function ContactSection({ id }) {
                                 <FaLinkedin className="text-[#0A66C2]" />
                                 <span className="bg-gradient-to-r from-[#0A66C2] to-[#0077B5] bg-clip-text text-transparent font-semibold">
                                     LinkedIn
+                                </span>
+                            </a>
+
+                            {/* X (formerly Twitter) */}
+                            <a
+                                href="https://x.com/heyshahmeer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center space-x-3 hover:opacity-80 transition"
+                            >
+                                <SiX className="text-white bg-black rounded-sm p-0.5" />
+                                <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent font-semibold">
+                                    Twitter
                                 </span>
                             </a>
 

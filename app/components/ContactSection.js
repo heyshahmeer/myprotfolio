@@ -77,16 +77,7 @@ export default function ContactSection({ id }) {
                             className="space-y-5 text-gray-300"
                         >
 
-                            {/* EMAIL */}
-                            <a
-                                href="mailto:shahmeer.dev786@gmail.com"
-                                className="flex items-center space-x-3 hover:opacity-80 transition"
-                            >
-                                <FaEnvelope className="text-[#EA4335]" />
-                                <span className="bg-gradient-to-r from-[#EA4335] to-[#FBBC05] bg-clip-text text-transparent font-semibold">
-                                    Gmail
-                                </span>
-                            </a>
+                        
 
                             {/* X (formerly Twitter) */}
                             <a

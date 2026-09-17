@@ -10,7 +10,6 @@ export default function Footer() {
     { icon: FaGithub, href: "https://github.com/heyshahmeer", label: "GitHub", color: "hover:text-[#D1D1D1]" },
     { icon: SiX, href: "https://x.com/heyshahmeer", label: "X", color: "hover:text-white" },
     { icon: FaLinkedin, href: "https://linkedin.com/in/shahmeershahid", label: "LinkedIn", color: "hover:text-[#4A0E0E]" },
-    { icon: FaEnvelope, href: "mailto:shahmeer.dev786@gmail.com", label: "Email", color: "hover:text-[#4A0E0E]" },
     { icon: FaInstagram, href: "https://instagram.com/heyshahmeer_", label: "Instagram", color: "hover:text-[#4A0E0E]" },
     { icon: SiFiverr, href: "https://www.fiverr.com/sellers/theshahmeer", label: "Fiverr", color: "hover:text-[#4A0E0E]" },
     { icon: SiUpwork, href: "https://www.upwork.com/freelancers/~01cf0ddf9b8b985b15", label: "Upwork", color: "hover:text-[#4A0E0E]" },
@@ -18,10 +17,10 @@ export default function Footer() {
 
   const quickLinks = [
     { name: "Home", href: "/" },
-    { name: "Projects", href: "/project" },
-    { name: "Capabilities", href: "/capabilities" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Projects", href: "/#project" },
+    { name: "Capabilities", href: "/#capabilities" },
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -88,10 +87,14 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-[#8E8E93]">
               <li>
                 <a
-                  href="mailto:theshahmeer786@gmail.com"
-                  className="hover:text-[#8E8E93] transition-colors"
+                  href="https://linkedin.com/in/shahmeershahid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="hover:text-[#8E8E93] transition-colors inline-flex items-center gap-2"
                 >
-                  shahmeer.dev786@gmail.com
+                  <FaLinkedin className="h-4 w-4" aria-hidden="true" />
+                  LinkedIn
                 </a>
               </li>
               <li className="text-[#505052]">Islamabad, Pakistan</li>

@@ -64,8 +64,9 @@ export default function ContactSection({ id }) {
                             viewport={{ once: true }}
                             className="text-[#8E8E93] leading-relaxed"
                         >
-                            Open for High-Impact roles in <b>AI Engineering</b>, <b>Platform Security</b>, and <b>Cloud Architecture</b>.
-                            Let’s build the intelligent systems of tomorrow, securely and at scale.
+                            Open for freelance projects and collaborations in <b>AI automation</b>,{" "}
+                            <b>full-stack development</b>, and <b>workflow systems</b>.
+                            Let's build something that actually works.
                         </motion.p>
 
                         {/* CONTACT LIST */}
@@ -186,11 +187,12 @@ export default function ContactSection({ id }) {
                         </h2>
                         <div className="w-24 border-b-4 border-[#4A0E0E] mb-10"></div>
                         <p className="text-[#8E8E93] leading-relaxed mb-6">
-                            I appreciate you taking the time to explore my work. If you’re seeking someone driven,
-                            creative, and deeply focused on cybersecurity and full-stack development you’ve found the right person.
+                            I appreciate you taking the time to explore my work. If you're
+                            looking for someone who builds practical AI automation and solid
+                            full-stack apps, let's talk.
                         </p>
                         <p className="text-[#8E8E93] leading-relaxed">
-                            Let’s connect and build the future securely, one line of code at a time.
+                            Let's connect and build something real, one project at a time.
                         </p>
                     </motion.div>
                 </div>

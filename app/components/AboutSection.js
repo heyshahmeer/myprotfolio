@@ -76,25 +76,26 @@ export default function AboutSection({ id }) {
                     >
                         <article>
                             <h2 className="text-2xl font-bold text-[#5F0A0A] mb-4 uppercase tracking-wider">
-                                Focus: AI Infrastructure & Platform Engineering
+                                Focus: AI Automation & Full-Stack Engineering
                             </h2>
                             <div className="text-[#8E8E93] text-lg leading-relaxed space-y-4">
                                 <p>
-                                    AI Platform Engineer specialized in <b>Secure Autonomous Systems</b>.
-                                    I architect infrastructure for intelligent applications, blending <b>DevSecOps rigor</b> with <b>MLOps agility</b> for speed and safety.
+                                    I build AI automation systems and full-stack apps for real clients
+                                    voice agents, workflow automation, and RAG-based tools. In parallel, I'm
+                                    building cybersecurity fundamentals from the ground up, working toward a
+                                    red-team specialization.
                                 </p>
                             </div>
                         </article>
 
                         <article className="pt-8">
                             <h2 className="text-xl font-bold text-[#4A0E0E] mb-3 uppercase tracking-wider">
-                                Advanced Tech Stack
+                                Currently Building
                             </h2>
                             <ul className="list-disc list-inside space-y-2 text-[#8E8E93] ml-4">
-                                <li><b>Orchestration:</b> Kubernetes (EKS/GKE), Helm, Docker, & WebAssembly (WASM).</li>
-                                <li><b>AI Security:</b> LLM Guardrails, Prompt Defense, & Model Governance.</li>
-                                <li><b>Infrastructure:</b> Terraform (IaC), Ansible, & AWS/GCP Cloud Native Architecture.</li>
-                                <li><b>Frontend AI:</b> Next.js 15, React Server Components, & Vector Database Integration.</li>
+                                <li>An AI automation freelance practice voice agents, n8n workflows, RAG support agents, delivered to real clients.</li>
+                                <li>Cybersecurity fundamentals through structured coursework and hands-on practice in networking and Linux.</li>
+                                <li>A long-term path toward pentesting and a security specialization.</li>
                             </ul>
                         </article>
                     </motion.section>

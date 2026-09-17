@@ -45,8 +45,8 @@ export default function CombinedHero() {
                         className="w-full md:w-1/2"
                     >
                         <h1 className="text-6xl md:text-[8vw] font-bold leading-[0.9] tracking-tighter text-[#D1D1D1]">
-                            Platform <br />
-                            <span className="text-[#5F0A0A]">Engineer</span>
+                            AI Automation. <br />
+                            <span className="text-[#5F0A0A]">Full-Stack Apps.</span>
                         </h1>
                     </motion.div>
 
@@ -58,7 +58,7 @@ export default function CombinedHero() {
                         className="w-full md:w-1/3 mt-8 md:mt-24 text-right md:text-left"
                     >
                         <p className="text-sm md:text-base text-[#8E8E93] leading-relaxed max-w-xs font-light">
-                            Engineering secure, high-performance platforms and intelligent systems.
+                            Building AI automation systems and full-stack apps for real businesses.
                         </p>
                     </motion.div>
                 </div>
@@ -68,8 +68,8 @@ export default function CombinedHero() {
                     <div className="flex flex-wrap gap-12">
                         {[
                             { num: "01", label: "Full-Stack Development" },
-                            { num: "02", label: "DevSecOps & Security" },
-                            { num: "03", label: "AI Systems Engineering" }
+                            { num: "02", label: "AI Automation & Agents" },
+                            { num: "03", label: "Security Fundamentals (Learning)" }
                         ].map((item, i) => (
                             <motion.div
                                 key={i}
@@ -101,15 +101,15 @@ export default function CombinedHero() {
                 >
                     <motion.div variants={fadeInUp} className="space-y-4">
                         <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
-                            <span className="block text-[#D1D1D1]">Building Fast</span>
-                            <span className="block text-[#5F0A0A]">Web Apps,</span>
+                            <span className="block text-[#D1D1D1]">Building AI Automation</span>
+                            <span className="block text-[#5F0A0A]">and Full-Stack Apps</span>
                             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4A0E0E] via-[#D1D1D1] to-[#1A1A1C]">
-                                Secured by Design.
+                                That Ship.
                             </span>
                         </h2>
                         <p className="text-[#8E8E93] text-lg md:text-xl leading-relaxed max-w-2xl mx-0">
-                            I bridge the gap between rapid delivery and ironclad security.
-                            Full-stack Developer & DevSecOps Specialist.
+                            I build voice agents, automation workflows, and full-stack apps for
+                            real clients, while going deep on security fundamentals on the side.
                         </p>
                     </motion.div>
 

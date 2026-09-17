@@ -19,7 +19,7 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/project" },
-    { name: "DevSecOps", href: "/devsecops" },
+    { name: "Capabilities", href: "/capabilities" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -43,7 +43,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4 text-[#D1D1D1]">Shahmeer Shahid</h3>
             <p className="text-[#8E8E93] text-sm leading-relaxed mb-4">
-              Frontend Developer & DevSecOps Advocate. Building secure, scalable web applications with modern technologies.
+              Full-Stack Developer & AI Automation Builder. Building practical
+              automation systems and full-stack apps with modern technologies.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => {

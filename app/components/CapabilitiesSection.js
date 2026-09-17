@@ -8,8 +8,9 @@ import {
     FaAws,
     FaLinux,
     FaShieldAlt,
+    FaDocker,
 } from "react-icons/fa";
-import { SiKubernetes } from "react-icons/si";
+import { SiN8N, SiFastapi, SiVapi, SiLangchain, SiGithubactions } from "react-icons/si";
 import Dashboard from "./Dashboard";
 
 // Motion Variants for smooth entrance
@@ -34,22 +35,22 @@ const itemVariants = {
     },
 };
 
-export default function DevSecOpsSection({ id }) {
+export default function CapabilitiesSection({ id }) {
 
-    // Data for the DevSecOps Pipeline section
+    // Data for the AI Automation Pipeline section
     const pipelineSteps = [
-        { title: "AI-Driven UX (DEV)", desc: "Adaptive interfaces with Next.js and secure AI model contexts.", icon: <FaReact />, color: "#8E8E93" },
-        { title: "LLM Gateway Security (SEC)", desc: "Protecting GenAI endpoints with validation layers.", icon: <FaShieldAlt />, color: "#4A0E0E" },
-        { title: "Platform Orchestration (OPS)", desc: "Kubernetes & WASM-based deployment strategies.", icon: <SiKubernetes />, color: "#505052" },
-        { title: "Infrastructure as Code (OPS)", desc: "Hardened Linux and Terraform/Ansible provisioning.", icon: <FaLinux />, color: "#8E8E93" },
-        { title: "Autonomous Pipelines (OPS)", desc: "Self-healing CI/CD with automated security rollbacks.", icon: <FaGitAlt />, color: "#4A0E0E" },
-        { title: "Observability & AIOps (OPS)", desc: "Deep tracing and AI-driven anomaly detection.", icon: <FaAws />, color: "#505052" },
+        { title: "Voice Agents (DEV)", desc: "Inbound scheduling agents built with Vapi, wired into automated workflows.", icon: <FaReact />, color: "#8E8E93" },
+        { title: "RAG Support Agents (AI)", desc: "Customer support agents built with FastAPI, LangChain, and ChromaDB.", icon: <FaShieldAlt />, color: "#4A0E0E" },
+        { title: "Workflow Automation (OPS)", desc: "n8n pipelines connecting scraping, AI processing, and business tools.", icon: <SiN8N />, color: "#505052" },
+        { title: "Full-Stack Deployment (DEV)", desc: "Next.js apps containerized with Docker and deployed on Vercel.", icon: <FaLinux />, color: "#8E8E93" },
+        { title: "CI/CD Pipelines (OPS)", desc: "Automated build and test pipelines with GitHub Actions.", icon: <FaGitAlt />, color: "#4A0E0E" },
+        { title: "Security Fundamentals (LEARNING)", desc: "Building networking and Linux fundamentals toward a red-team specialization.", icon: <FaAws />, color: "#505052" },
     ];
 
     return (
         <section id={id} className="min-h-screen bg-transparent text-[#D1D1D1] overflow-x-hidden py-16">
 
-            {/* === 1. DEVSECOPS HEADER === */}
+            {/* === 1. AI AUTOMATION HEADER === */}
             <div className="relative flex flex-col justify-center items-center text-center px-6 mb-12">
 
                 <div className="relative z-10 max-w-4xl">
@@ -60,7 +61,7 @@ export default function DevSecOpsSection({ id }) {
                         viewport={{ once: true }}
                         className="text-[#4A0E0E] font-light text-xl md:text-2xl mb-3 tracking-widest uppercase"
                     >
-                        DevSecOps | Product Engineering
+                        AI Automation | Product Engineering
                     </motion.h2>
 
                     <motion.h2
@@ -70,12 +71,12 @@ export default function DevSecOpsSection({ id }) {
                         viewport={{ once: true }}
                         className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white relative overflow-hidden"
                     >
-                        Building Resilient Applications
+                        Building Automation
                         <span
                             className="block bg-gradient-to-r from-[#1A1A1C] via-[#D1D1D1] to-[#4A0E0E] text-transparent bg-clip-text mt-2"
                             style={{ textShadow: '0 0 6px rgba(74,14,14,0.1), 0 0 12px rgba(209,209,209,0.1)' }}
                         >
-                            Secured by Design
+                            That Actually Ships
                         </span>
                     </motion.h2>
 
@@ -86,14 +87,15 @@ export default function DevSecOpsSection({ id }) {
                         viewport={{ once: true }}
                         className="text-lg md:text-xl text-[#D1C7BB] mb-10 max-w-2xl mx-auto leading-relaxed"
                     >
-                        Integrating security (SAST/DAST) directly into CI/CD for high-performance, secure Next.js applications.
+                        From voice agents to internal workflows, I build AI systems that plug
+                        into real business processes and deliver working results.
                     </motion.p>
                 </div>
             </div>
 
 
 
-            {/* --- 2. THE DEVSECOPS PIPELINE --- */}
+            {/* --- 2. WHAT I ACTUALLY BUILD --- */}
             <motion.div
                 className="py-10 px-6 text-center"
                 variants={containerVariants}
@@ -105,13 +107,13 @@ export default function DevSecOpsSection({ id }) {
                     variants={itemVariants}
                     className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#D1D1D1] via-[#4A0E0E] to-[#1A1A1C] drop-shadow-lg"
                 >
-                    The DevSecOps Pipeline
+                    What I Actually Build
                 </motion.h2>
                 <motion.p
                     variants={itemVariants}
                     className="text-[#8E8E93] max-w-3xl mx-auto mb-12"
                 >
-                    Merging speed with robust security and automated operations.
+                    Automation, agents, and full-stack systems end to end.
                 </motion.p>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">

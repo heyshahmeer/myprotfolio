@@ -57,31 +57,31 @@ export default function ProjectsSection({ id }) {
         {
             image: "/p9.png",
             title: "NeuroGastronomy AI",
-            category: "GenAI & LLM Ops",
-            description: "Enterprise Recipe Engine with Fine-Tuned LLMs and RAG for secure, localized results.",
+            category: "AI & Automation",
+            description: "A RAG-based recipe assistant exploring retrieval-augmented generation with LangChain and a vector database.",
             tech: ["Next.js", "OpenAI / LangChain", "Vector DB", "Prompt Eng."],
             url: "https://foodgenie-five.vercel.app/",
             github: null,
             featured: true,
             modal: false,
-            security: ["Prompt Injection Defense", "PII Redaction", "Output Validation"],
+            security: [],
         },
         {
             image: "/p7.png",
             title: "Lumix Commerce",
-            category: "Headless E-Com Platform",
-            description: "Headless E-Com platform with edge-caching and PCI-DSS compliant secure payment tunnels.",
-            tech: ["Next.js 15", "Edge Functions", "Stripe Connect", "+1"],
+            category: "E-Commerce Template",
+            description: "A headless e-commerce template exploring Next.js edge functions and Stripe UI integration. Demo project — not a live payment system.",
+            tech: ["Next.js 15", "Edge Functions"],
             url: "https://shoestore-9yb9.vercel.app/",
             github: null,
             featured: false,
             modal: false,
-            security: ["PCI-DSS Tunnels", "Bot Mitigation", "Session Hygiene"],
+            security: [],
         },
         {
             image: "/p1.png",
             title: "Pak Tourism",
-            category: "Travel & Tourism",
+            category: "Demo Project",
             description: "Responsive travel platform showcasing nature and cultural heritage.",
             tech: ["Next.js", "React", "Responsive Design"],
             url: "https://paktourism.vercel.app/",
@@ -89,6 +89,68 @@ export default function ProjectsSection({ id }) {
             featured: false,
             modal: false,
             security: [],
+        },
+        {
+            image: "/docsummarizer.png",
+            title: "Document Summarizer",
+            category: "AI & Automation",
+            description: "Paste any document, get the key points back in seconds. No fluff, no filler. Powered by Groq + LLaMA 3.3 70B.",
+            longDescription: `We all have that one PDF we opened, scrolled through, and quietly gave up on. This handles it for you. Paste any document and get the key points back in seconds no fluff, no filler. Powered by Groq + LLaMA 3.3 70B with n8n for automation.`,
+            highlights: [
+                {
+                    icon: "code",
+                    title: "Python UI",
+                    detail: "Built with a Python UI library for a clean, responsive interface that makes document summarization effortless."
+                },
+                {
+                    icon: "actions",
+                    title: "n8n Automation",
+                    detail: "n8n workflows handle the document processing pipeline, from ingestion to LLM inference to output formatting."
+                },
+                {
+                    icon: "db",
+                    title: "Groq + LLaMA 3.3 70B",
+                    detail: "Leverages Groq's ultra-fast inference with LLaMA 3.3 70B for accurate, concise summaries in seconds."
+                }
+            ],
+            tech: ["Python", "Groq API", "LLaMA 3.3 70B", "n8n", "Python UI Library"],
+            github: null,
+            url: null,
+            featured: true,
+            modal: true,
+            security: [],
+            images: ["/apptoolkit.png","/docsummarizer.png", "/docsummarizer2.png", "/docsummarizer3.png"],
+        },
+        {
+            image: "/emailassistant.png",
+            title: "AI Email Assistant",
+            category: "AI & Automation",
+            description: "Analyzes tone, summarizes messages, and suggests the right reply all in seconds. Powered by LLaMA 3.3 70B via Groq API.",
+            longDescription: `We spend hours reading and replying to emails every day. I spent that time building a tool that does it for you. My AI Email Assistant analyzes tone, summarizes the message, and suggests the right reply — all in seconds, powered by LLaMA 3.3 70B via Groq API. Work smarter. Ship faster. 🚀`,
+            highlights: [
+                {
+                    icon: "code",
+                    title: "Python UI",
+                    detail: "Built with a Python UI library for a smooth, intuitive email management experience."
+                },
+                {
+                    icon: "actions",
+                    title: "n8n Automation",
+                    detail: "n8n orchestrates the email processing pipeline, from inbox monitoring to AI analysis to reply suggestions."
+                },
+                {
+                    icon: "db",
+                    title: "Tone Analysis & Summarization",
+                    detail: "Analyzes email tone, summarizes the message, and suggests contextually appropriate replies using LLaMA 3.3 70B via Groq API."
+                }
+            ],
+            tech: ["Python", "Groq API", "LLaMA 3.3 70B", "n8n", "Python UI Library"],
+            github: null,
+            url: null,
+            featured: true,
+            modal: true,
+            security: [],
+            images: ["/emailassistant.png", "/emailassistant2.png", "/emailassistant3.png"],
         },
     ];
 
@@ -122,8 +184,7 @@ export default function ProjectsSection({ id }) {
                         </h2>
                         <div className="w-24 h-1 bg-[#4A0E0E] mx-auto mb-8"></div>
                         <p className="text-xl md:text-2xl text-[#8E8E93] max-w-3xl mx-auto leading-relaxed">
-                            Secure, scalable web applications with a focus on{" "}
-                            <span className="text-[#4A0E0E] font-semibold">security by design</span>.
+                            Full-stack apps and AI automation systems, built end to end.
                         </p>
                     </motion.div>
                 </div>

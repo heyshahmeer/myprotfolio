@@ -30,20 +30,19 @@ const dancingScript = Dancing_Script({
 export const metadata = {
   metadataBase: new URL('https://shahmeerhere.vercel.app'),
   title: {
-    default: "Shahmeer Shahid | Senior Platform Engineer & DevSecOps Expert",
+    default: "Shahmeer Shahid | Full-Stack Developer & AI Automation Builder",
     template: "%s | Shahmeer Shahid"
   },
-  description: "Senior Platform Engineer and DevSecOps Specialist architecting secure AI infrastructure, cloud-native platforms, and high-performance automated pipelines. Explore my technical portfolio.",
+  description: "Full-stack developer and AI automation builder. I build voice agents, workflow automation, and full-stack apps for real clients. Explore my projects and technical background.",
   keywords: [
     "Shahmeer Shahid",
-    "Platform Engineer",
-    "DevSecOps Specialist",
-    "Cloud Security Expert",
-    "AI Infrastructure",
-    "Kubernetes Engineering",
-    "Secure CI/CD Pipelines",
-    "Full-stack Security",
-    "Cybersecurity Portfolio"
+    "Full-Stack Developer",
+    "AI Automation Developer",
+    "n8n Automation",
+    "RAG Development",
+    "Next.js Developer",
+    "Voice AI Agents",
+    "Freelance Developer Pakistan"
   ],
   authors: [{ name: "Shahmeer Shahid", url: "https://shahmeerhere.vercel.app" }],
   creator: "Shahmeer Shahid",
@@ -55,8 +54,8 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://shahmeerhere.vercel.app",
-    title: "Shahmeer Shahid | Platform Engineer & DevSecOps Specialist",
-    description: "Architecting the future of secure, autonomous AI infrastructure. See my latest projects and engineering strategies.",
+    title: "Shahmeer Shahid | Full-Stack Developer & AI Automation Builder",
+    description: "Building AI automation systems and full-stack apps for real clients. See my latest projects.",
     siteName: "Shahmeer Shahid Professional Portfolio",
     images: [
       {
@@ -69,8 +68,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shahmeer Shahid | Platform Engineer & DevSecOps Specialist",
-    description: "Securing the software factory from signed commits to verified deployment artifacts.",
+    title: "Shahmeer Shahid | Full-Stack Developer & AI Automation Builder",
+    description: "Building AI automation systems and full-stack apps for real clients.",
     images: ["/hero_office.png"],
     creator: "@heyshahmeer",
   },
@@ -96,14 +95,14 @@ export default function RootLayout({ children }) {
     "name": "Shahmeer Shahid",
     "url": "https://shahmeerhere.vercel.app",
     "image": "https://shahmeerhere.vercel.app/hero_office.png",
-    "jobTitle": "Senior Platform Engineer & DevSecOps Specialist",
-    "description": "Senior Platform Engineer architecting secure AI infrastructure and high-performance cloud-native platforms.",
+    "jobTitle": "Full-Stack Developer & AI Automation Builder",
+    "description": "Full-stack developer building AI automation systems, voice agents, and web applications for freelance clients.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Islamabad",
       "addressCountry": "PK"
     },
-    "skills": ["Platform Engineering", "DevSecOps", "Cloud Security", "Kubernetes", "AI Infrastructure", "Next.js"],
+    "skills": ["Full-Stack Development", "AI Automation", "n8n", "LangChain", "RAG Systems", "Next.js", "React", "Node.js"],
     "sameAs": [
       "https://github.com/heyshahmeer",
       "https://linkedin.com/in/shahmeershahid",

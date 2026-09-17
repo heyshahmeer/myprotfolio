@@ -8,6 +8,10 @@ import {
     FaLinux,
     FaUserShield,
     FaBug,
+    FaDocker,
+    FaNetworkWired,
+    FaSitemap,
+    FaRobot,
 } from "react-icons/fa";
 import {
     SiNextdotjs,
@@ -21,40 +25,68 @@ import {
     SiPostgresql,
     SiPostman,
     SiBurpsuite,
+    SiGithubactions,
+    SiGradio,
+    SiN8N,
+    SiFastapi,
+    SiLangchain,
+    SiGooglecloud,
+    SiGooglegemini,
 } from "react-icons/si";
 import { IoIosColorPalette } from "react-icons/io";
-import { MdGradient } from "react-icons/md";
+import { MdGradient, MdCloud, MdMic } from "react-icons/md";
 import { Button } from "./ui/button";
 
 const allTools = [
-    // --- Frontend ---
-    { name: "React", icon: <FaReact />, color: "#61dafb", category: "Frontend", url: "https://reactjs.org/" },
+    // ============================================================
+    // TIER 1 — CORE FOUNDATION (highest value, most used daily)
+    // ============================================================
     { name: "Next.js", icon: <SiNextdotjs />, color: "#cccccc", category: "Frontend", url: "https://nextjs.org/" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#38bdf8", category: "Frontend", url: "https://tailwindcss.com/" },
-    { name: "React Bits", icon: <IoIosColorPalette />, color: "#a855f7", category: "Frontend", url: "https://reactbits.dev/" },
-    { name: "uiGradients", icon: <MdGradient />, color: "#eb3349", category: "Frontend", url: "https://uigradients.com/" },
-
-    // --- Backend & Auth ---
+    { name: "React", icon: <FaReact />, color: "#61dafb", category: "Frontend", url: "https://reactjs.org/" },
     { name: "Node.js", icon: <FaNodeJs />, color: "#3c873a", category: "Backend", url: "https://nodejs.org/" },
-    { name: "Firebase", icon: <SiFirebase />, color: "#fbbf24", category: "Backend", url: "https://firebase.google.com/" },
+    { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791", category: "Database", url: "https://www.postgresql.org/" },
+    { name: "Docker", icon: <FaDocker />, color: "#2496ed", category: "DevOps", url: "https://www.docker.com/" },
+    { name: "Git", icon: <FaGitAlt />, color: "#f1502f", category: "DevOps", url: "https://git-scm.com/" },
+    { name: "GitHub Actions", icon: <SiGithubactions />, color: "#2088ff", category: "DevOps", url: "https://github.com/features/actions" },
+    { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#38bdf8", category: "Frontend", url: "https://tailwindcss.com/" },
+
+    // ============================================================
+    // TIER 2 — AI / LLM ENGINEERING (high leverage, growing fast)
+    // ============================================================
+    { name: "Groq", icon: <SiGooglegemini />, color: "#f55036", category: "AI", url: "https://groq.com/" },
+    { name: "LangChain", icon: <SiLangchain />, color: "#1c3c3c", category: "AI", url: "https://www.langchain.com/" },
+    { name: "FastAPI", icon: <SiFastapi />, color: "#009688", category: "Backend", url: "https://fastapi.tiangolo.com/" },
+    { name: "n8n", icon: <SiN8N />, color: "#ea4b71", category: "Automation", url: "https://n8n.io/" },
+    { name: "Gradio", icon: <SiGradio />, color: "#ff7c00", category: "AI", url: "https://www.gradio.app/" },
+    { name: "Vapi", icon: <MdMic />, color: "#8b5cf6", category: "AI", url: "https://vapi.ai/" },
+
+    // ============================================================
+    // TIER 3 — CLOUD, DB & AUTH (important but situational)
+    // ============================================================
+    { name: "Google Cloud", icon: <SiGooglecloud />, color: "#4285f4", category: "Cloud", url: "https://cloud.google.com/" },
+    { name: "MongoDB", icon: <SiMongodb />, color: "#3FA037", category: "Database", url: "https://www.mongodb.com/" },
     { name: "Supabase", icon: <SiSupabase />, color: "#22c55e", category: "Backend", url: "https://supabase.com/" },
+    { name: "Firebase", icon: <SiFirebase />, color: "#fbbf24", category: "Backend", url: "https://firebase.google.com/" },
+    { name: "Vercel", icon: <SiVercel />, color: "#cccccc", category: "Cloud", url: "https://vercel.com/" },
     { name: "Clerk Auth", icon: <FaUserShield />, color: "#6c47ff", category: "Backend", url: "https://clerk.com/" },
+    { name: "MySQL", icon: <SiMysql />, color: "#00758f", category: "Database", url: "https://www.mysql.com/" },
     { name: "Redux", icon: <SiRedux />, color: "#764abc", category: "Backend", url: "https://redux.js.org/" },
 
-    // --- Database ---
-    { name: "MongoDB", icon: <SiMongodb />, color: "#3FA037", category: "Database", url: "https://www.mongodb.com/" },
-    { name: "MySQL", icon: <SiMysql />, color: "#00758f", category: "Database", url: "https://www.mysql.com/" },
-    { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791", category: "Database", url: "https://www.postgresql.org/" },
-
-    // --- Security & Testing ---
+    // ============================================================
+    // TIER 4 — SECURITY, NETWORKING, TESTING & ENVIRONMENT
+    // ============================================================
+    { name: "Wireshark", icon: <FaNetworkWired />, color: "#1679a7", category: "Security", url: "https://www.wireshark.org/" },
+    { name: "Cisco Packet Tracer", icon: <FaSitemap />, color: "#1ba0d7", category: "Security", url: "https://www.netacad.com/courses/packet-tracer" },
     { name: "Burp Suite", icon: <SiBurpsuite />, color: "#ff8c00", category: "Security", url: "https://portswigger.net/burp" },
     { name: "Nmap", icon: <FaBug />, color: "#cc0000", category: "Security", url: "https://nmap.org/" },
-    { name: "Git", icon: <FaGitAlt />, color: "#f1502f", category: "DevOps", url: "https://git-scm.com/" },
-
-    // --- API & Environment ---
-    { name: "Postman", icon: <SiPostman />, color: "#ff6c37", category: "Tools", url: "https://www.postman.com/" },
-    { name: "Vercel", icon: <SiVercel />, color: "#cccccc", category: "Cloud", url: "https://vercel.com/" },
     { name: "Linux", icon: <FaLinux />, color: "#f0f0f0", category: "Cloud", url: "https://www.linux.org/" },
+    { name: "Postman", icon: <SiPostman />, color: "#ff6c37", category: "Tools", url: "https://www.postman.com/" },
+
+    // ============================================================
+    // TIER 5 — DESIGN NICHE (nice-to-have polish)
+    // ============================================================
+    { name: "React Bits", icon: <IoIosColorPalette />, color: "#a855f7", category: "Frontend", url: "https://reactbits.dev/" },
+    { name: "uiGradients", icon: <MdGradient />, color: "#eb3349", category: "Frontend", url: "https://uigradients.com/" },
 ];
 
 export default function Dashboard() {
@@ -84,7 +116,7 @@ export default function Dashboard() {
                             bg-clip-text text-transparent
                             bg-gradient-to-r from-[#D1D1D1] via-[#4A0E0E] to-[#1A1A1C]
                             drop-shadow-lg">
-                DevSecOps Tools Dashboard 🛡️
+                 Tech Dashboard 🛡️
             </h1>
 
             {/* Category Buttons */}

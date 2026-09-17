@@ -1,7 +1,7 @@
 "use client";
 
 import CombinedHero from "./components/CombinedHero";
-import DevSecOpsSection from "./components/DevSecOpsSection";
+import CapabilitiesSection from "./components/CapabilitiesSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <AnimatedBackground />
-      <DevSecOpsSection id="devsecops" />
+      <CapabilitiesSection id="capabilities" />
       <ProjectsSection id="project" />
 
       <AboutSection id="about" />

@@ -24,7 +24,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-black overflow-hidden min-h-[500px]">
+    <footer className="relative bg-black overflow-hidden min-h-125">
       {/* Background Image - Precisely Positioned & Fixed */}
       <div className="absolute inset-0 z-0">
         <div

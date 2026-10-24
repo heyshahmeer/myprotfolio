@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaExternalLinkAlt, FaGithub, FaLock, FaShieldAlt, FaTimes, FaDocker, FaCode } from "react-icons/fa";
-import { SiGithubactions, SiPostgresql, SiMongodb } from "react-icons/si";
+import { SiGithubactions, SiPostgresql } from "react-icons/si";
 
 export default function ProjectsSection({ id }) {
     const [activeModal, setActiveModal] = useState(null);
@@ -18,6 +18,42 @@ export default function ProjectsSection({ id }) {
     }, [activeModal]);
 
     const projects = [
+        {
+            image: "/scamradar.png",
+            title: "Scam Radar",
+            category: "Automation & DevOps",
+            description: "Paste a suspicious SMS or WhatsApp message and get a verdict with the reasons. Built around the fake JazzCash and BISP messages common in Pakistan, and shipped with a full CI/CD pipeline.",
+            longDescription: `Scam Radar checks suspicious messages for common scam patterns and returns a verdict (scam, suspicious, or looks safe) with the reasons behind it. I built it to ship a small product end to end: a Next.js app, an n8n automation workflow, a Postgres database, a Dockerized stack, and a GitHub Actions pipeline that tests, builds, publishes, and deploys every change. The scoring is rule-based and unit tested; an LLM second opinion for borderline messages is next on the roadmap.`,
+            highlights: [
+                {
+                    icon: "actions",
+                    title: "4-Job CI/CD Pipeline",
+                    detail: "Every push runs lint, tests and a build, validates the n8n workflow JSON, fails if a .env file is ever committed, publishes a Docker image to GHCR, and auto-deploys through a self-hosted runner. Each job only runs if the previous one passes."
+                },
+                {
+                    icon: "docker",
+                    title: "Docker Compose Stack",
+                    detail: "Next.js, n8n and PostgreSQL run together in Docker Compose. The web app ships as a multi-stage production image, and n8n waits for a Postgres health check before starting."
+                },
+                {
+                    icon: "code",
+                    title: "n8n Scoring Workflow",
+                    detail: "A webhook feeds a Code node that scores the message, then splits into two parallel branches: one returns the verdict immediately, the other saves the result to the database."
+                },
+                {
+                    icon: "db",
+                    title: "Privacy-Minded Storage",
+                    detail: "PostgreSQL stores only the verdict, score, reasons and links for trend analysis. The raw message is never saved, and the n8n admin panel is never exposed publicly."
+                }
+            ],
+            tech: ["Next.js", "n8n", "Docker", "Docker Compose", "GitHub Actions", "GHCR", "PostgreSQL", "Node.js"],
+            github: "https://github.com/heyshahmeer/scam-radar",
+            url: null,
+            featured: true,
+            modal: true,
+            security: ["CI Blocks Committed .env", "No Raw Messages Stored", "n8n Admin Never Exposed"],
+            images: ["/scamradar.png", "/scamradar2.png", "/scamradar3.png", "/scamradar4.png", "/scamradar5.png"],
+        },
         {
             image: "/apptrackr.png",
             title: "AppTrackr",
@@ -119,7 +155,7 @@ export default function ProjectsSection({ id }) {
             featured: true,
             modal: true,
             security: [],
-            images: ["/apptoolkit.png","/docsummarizer.png", "/docsummarizer2.png", "/docsummarizer3.png"],
+            images: ["/apptoolkit.png", "/docsummarizer.png", "/docsummarizer2.png", "/docsummarizer3.png"],
         },
         {
             image: "/emailassistant.png",
